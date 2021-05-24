@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Innolabz Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link href="../static/img/logo1.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html"><img src="../static/img/logo2.png" alt="" width="150px" ></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-right"></i></a>
+            <ul>
+              <li><a href="#">3E Mantra</a></li>
+              <li><a href="#">Mision</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">What We Do</a></li>
+              <li><a href="#">Verticals</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html">Group Companies</a></li>
+          <li><a class="nav-link scrollto " href="index.html">Media</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Team</a></li>
+          <li><a class="nav-link scrollto " href="career.html">Career</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex align-items-center">
+        <a href="https://twitter.com/innolabz" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/innolabz" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/innolabz/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/innolabz/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <center><section id="contact">
+  <div class="container"
+    <div class="row">
+      <div class="col-lg-5 col-md-8">
+        <div class="form">
+         <form method="post" action="/career">
+            {% csrf_token %}
+            <label for="fname"></label>
+            <input type="text" id="fname" name="fname" placeholder="Enter First name "><br>
+            <label for="lname"></label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last name "><br>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Enter Email "><br>
+            <label for="phone"></label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Mobile Number "><br><br>
+            <label for="hiring" STYLE="float:left;">Applying For </label>&emsp;&emsp;&emsp;
+            <select id="hiring" class="hiring" name="hiring" placeholder=" ">
+              <option value="select_one">Select One </option>
+              <option value="hr_admin">HR Admin</option>
+              <option value="bd_executive">BD Executive</option>
+              <option value="content_writer">Content Writer</option>
+              <option value="graphics">Motion Graphic Designer</option>
+            </select><br><br>
+            <label for="myfile" STYLE="float:left;">Upload Resume</label><br><br>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="text" id="video" name="video" placeholder="video link"><br><br>
+            <center><button class="send-message-cta" type="submit">SUBMIT</button><br><br>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section></center>
+   <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Inno-labz</strong>. All Rights Reserved
+            </p>
+   
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">About</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">Group Companies</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#features">Media</a>
+              </li>
+              
+              <li class="list-inline-item">
+                <a href="#team">Team</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#contact">Contact</a>
+              </li>
+              
+            </ul>
+                   
+          </div>
+          
+          <div class="footer-social-links">
+            <a href="#" class="linkedin"></a><i class="bi bi-linkedin"></i>
+      
+            <a href="#" class="instagram"></a><i class="bi bi-instagram"></i>
+
+            <a href="#" class="facebook"></a><i class="bi bi-facebook"></i>
+
+            <a href="#" class="youtube"></a><i class="bi bi-youtube"></i>
+
+            <a href="#" class="twitter"></a><i class="bi bi-twitter"></i>
+            
+          </div>
+          <div class="abc">
+            <ul class="career">
+              <li class="car">
+                <a href="#">Power2Career</a>
+              </li>
+              <li class="car">
+                <a href="#">Power2Startup</a>
+              </li>
+              <li class="car">
+                <a href="#">Power2Idea</a>
+              </li>
+              <li class="car">
+                <a href="#">Mission</a>
+              </li>
+              <li class="car">
+                <a href="#">Vision</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+</body>
