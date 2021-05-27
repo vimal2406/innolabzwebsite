@@ -29,3 +29,6 @@ def career(request):
         career= Career(fname=fname, lname=lname, email=email, phone=phone, hiring= hiring, video=video, date= datetime.today())
         career.save()
     return render(request, "career.html")
+
+def inner_page(request):
+    return render(request, 'inner_page.html')
